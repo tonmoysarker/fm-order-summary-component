@@ -1,9 +1,18 @@
 // font styles
+$font-base: "Red Hat Display", sans-serif;
+$font-weight-500: 500;
+$font-weight-700: 700;
+$font-weight-900: 900;
 
 // colours
 // primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
 
 // neutral
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
 
 // font colours
 
@@ -14,6 +23,23 @@ $box-shadow: 32px 32px 92px -44px rgba(0, 0, 0, 0.47);
 
 :root {
   // these variables are defined in the classic way to take advantage of var() fallback
+  --step--1: clamp(0.8333rem, 0.8099rem + 0.1002vw, 0.9rem);
+  --step-0: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1274rem + 0.3099vw, 1.4063rem);
+  --step-2: clamp(1.44rem, 1.3281rem + 0.4775vw, 1.7578rem);
+
+  --space-s: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  --space-m: clamp(1.5rem, 1.434rem + 0.2817vw, 1.6875rem);
+  --space-l: clamp(2rem, 1.912rem + 0.3756vw, 2.25rem);
+  --space-xl: clamp(3rem, 2.868rem + 0.5634vw, 3.375rem);
+
+  /* One-up pairs */
+  --space-s-m: clamp(1rem, 0.7579rem + 1.0329vw, 1.6875rem);
+  --space-m-l: clamp(1.5rem, 1.2359rem + 1.1268vw, 2.25rem);
+  --space-l-xl: clamp(2rem, 1.5158rem + 2.0657vw, 3.375rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1rem, 0.5599rem + 1.8779vw, 2.25rem);
 
   --gutter: var(--space-s-m);
   --border-radius: var(--step-0);

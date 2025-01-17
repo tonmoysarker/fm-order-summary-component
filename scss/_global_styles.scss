@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  background-color: $pale-blue;
+  font-family: $font-base;
+  font-size: var(--step-0);
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: $tracking-s;
+  font-weight: $font-weight-700;
+}
+
+h2 {
+  font-size: var(--step-1);
+}

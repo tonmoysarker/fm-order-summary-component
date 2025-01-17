@@ -1,0 +1,16 @@
+.summary-card {
+  max-width: 25rem;
+  overflow: hidden;
+background-color: $very-pale-blue;
+
+  .summary-card__content {
+    --gutter: var(--step-0);
+    padding: var(--step-2);
+    text-align: center;
+  }
+}
+
+.button {
+  width: 100%;
+  padding: var(--step--1);
+}

@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Order summary card</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="flex flex-column">
+    <picture>
+      <source srcset="images/pattern-background-desktop.svg" media="(min-width: 1024px)" />
+      <img src="" alt="">
+    </picture>
+    <main class="wrapper">
+      <h1 class="sr-only">Order Summary</h1>
+      <article class="summary-card flex flex-column">
+        <picture>
+          <img
+            class="summary-card__image"
+            src="images/illustration-hero.svg"
+            alt="Order Cover"
+        /></picture>
+        <section class="summary-card__content flex flex-column">
+          <h2 class="summary-card__title">Order Summary</h2>
+          <p class="summary-card__description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like! Annual Plan $59.99/year Change Proceed
+            to Payment Cancel Order
+          </p>
+          <section class="summary-card__plan flex">
+            <picture>
+              <img
+                class="summary-card__plan-icon"
+                src="images/icon-music.svg"
+                alt=""
+            /></picture>
+            <div class="summary-card__plan-details">
+              <h3 class="summary-card__plan-title">Annual Plan</h3>
+              <p class="summary-card__plan-price">$59.99/year</p>
+            </div>
+            <button class="summary-card__plan-change margin-left-a">
+              Change
+            </button>
+          </section>
 
-  Order Summary
+          <button class="button summary-card__proceed">
+            Proceed to Payment
+          </button>
+          <button class="button summary-card__cancel">Cancel Order</button>
+        </section>
+      </article>
+    </main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tonmoy Sarker</a>.
+    </footer>
+  </body>
 </html>
