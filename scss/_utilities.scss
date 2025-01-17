@@ -1,0 +1,89 @@
+// For vertical spacing. This utility makes such that every direct children that isn't the first child will have margin top (src Andy Bell)
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+// Sets max-width, horizontally centers items, consistent gutter (src Andy Bell)
+.wrapper {
+  width: 90vw;
+  width: clamp(
+    16rem,
+    90vw,
+    81.25rem
+  ); //min width 256px, ideal width 90vw, max width 1200px
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter, 1rem);
+  padding-right: var(--gutter, 1rem);
+}
+
+/**
+ * REGION 
+ * Add consistent vertical padding to create regions of content 
+ * Can either be configured by setting --region-space or use a default from the space scale
+ (src Andy Bell)
+ */
+.region {
+  padding-top: var(--region-space, var(--space-xl-2xl));
+  padding-bottom: var(--region-space, var(--space-xl-2xl));
+}
+
+.sr-only {
+  /* for accessibility */
+  position: absolute; /* Remove it from the document flow */
+  width: 1px; /* Reduce size to the minimum */
+  height: 1px; /* Same as width */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  overflow: hidden; /* Hide overflow */
+  clip: rect(0, 0, 0, 0); /* Clip the element */
+  white-space: nowrap; /* Prevent line breaks */
+  border: 0; /* No border */
+}
+
+// Margin Auto Utilities
+.margin-x-a {
+  margin-inline: auto;
+}
+
+.margin-y-a {
+  margin-block: auto;
+}
+
+.margin-a {
+  margin: auto;
+}
+
+.margin-top-a {
+  margin-top: auto;
+}
+
+.margin-right-a {
+  margin-right: auto;
+}
+
+.margin-bottom-a {
+  margin-bottom: auto;
+}
+
+.margin-left-a {
+  margin-left: auto;
+}
+
+.margin-inline-start-a {
+  margin-inline-start: auto;
+}
+
+.margin-inline-end-a {
+  margin-inline-end: auto;
+}
+
+.margin-block-start-a {
+  margin-block-start: auto;
+}
+
+.margin-block-end-a {
+  margin-block-end: auto;
+}
+
+//background colours
